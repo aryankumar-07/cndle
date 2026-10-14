@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif: 'Cormorant Garamond', Georgia, serif;
+    --font-sans: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-script: 'Pinyon Script', 'Alex Brush', cursive;
+
+    --bg-primary: #F7F3EC;
+    --bg-secondary: #EFE8DD;
+    --bg-paper: #FCFAF6;
+    --text-primary: #29251F;
+    --text-secondary: #71695E;
+    --text-muted: #958A7D;
+    --border-subtle: #E2D8CA;
+    --accent-champagne: #C4A56A;
+    --accent-gold: #987641;
+    --accent-sage: #9AA28B;
+    --accent-espresso: #40352C;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: var(--font-serif);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+}
+
+/* Restrained Luxury Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EC;
+}
+::-webkit-scrollbar-thumb {
+  background: #D8CEBE;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4A56A;
+}
+
+/* Subtle image zoom container */
+.img-zoom-container {
+  overflow: hidden;
+}
+.img-zoom-container img {
+  transition: transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.img-zoom-container:hover img {
+  transform: scale(1.04);
+}
+
+/* Accessible focus ring */
+:focus-visible {
+  outline: 2px solid #C4A56A;
+  outline-offset: 2px;
+}

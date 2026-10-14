@@ -1,0 +1,6 @@
+{
+  "name": "L'AMBRE ATELIER — Luxury Candle Maison",
+  "description": "Sensorial interactive luxury candle showcase with flame simulation, scent pyramids, burn visualizer, fragrance quiz, and custom gift box builder.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
